@@ -7,7 +7,7 @@ public class StudentManagement {
         static Student student[];
     public boolean sameGroup(Student s1, Student s2) {
         // TODO
-        if(s1.getGroup())
+        if(s1.getGroup().equals(s2.getGroup())
             return true;
         else return false;
         //return false; // xóa dòng này sau khi cài đặt
