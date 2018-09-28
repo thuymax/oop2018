@@ -3,11 +3,13 @@ package week2.task1;
 public class Task1 {
 
     public static int gcd(int a, int b) {
-        while (a!=b){
-            if(a>b) return a=a-b;
-            else return b=b-a;
+        int result=Math.min(a,b);
+        if(a==0) return 1;
+        while(result>=1){
+            if(a%result==0&&b%result==0) return result;
+            result--;
         }
-        return 0;
+        return result;
     }
 
     public static int fibonacci(int n) {
