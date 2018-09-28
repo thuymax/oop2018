@@ -1,4 +1,4 @@
-package fraction;
+package week2.task2;
 
 import static java.lang.Math.abs;
 import static java.lang.StrictMath.sqrt;
