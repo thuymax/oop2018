@@ -31,10 +31,10 @@ public class Week3 {
     	BMI = weight/(height*height);
     	String ketqua = new String(); 
     	
-    	if(BMI < 18.5) ketqua = "thieu can";
-    	else if(18.5 <= BMI && BMI < 23) ketqua = "binh thuong";
-    	else if(23 <= BMI && BMI < 25) ketqua = "thua can";
-    	else ketqua = "beo phi";
+    	if(BMI < 18.5) ketqua = "Thieu can";
+    	else if(18.5 <= BMI && BMI < 23) ketqua = "Binh thuong";
+    	else if(23 <= BMI && BMI < 25) ketqua = "Thua can";
+    	else ketqua = "Beo phi";
 
     		
     	System.out.println(ketqua);
