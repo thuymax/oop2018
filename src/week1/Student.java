@@ -1,24 +1,24 @@
+
 package week1;
 
 public class Student {
 
-    // TODO: khai báo các thuộc tính cho Student
-            private String name;
-            private String id;
-            private String group;
-            private string email;
-    // TODO: khai báo các phương thức getter, setter cho Student
+    private String name;
+    private String id;
+    private String group;
+    private String email;
 
+    // TODO: khai báo các thuộc tính cho Student
+    // TODO: khai báo các phương thức getter, setter cho Student
     /**
      * Constructor 1
      */
     Student() {
         // TODO:
-        this.name ="Student";
-        this.id   ="000";
-        this.group="INT22041";
-        this.email="uet@vnu.edu.vn";
-            
+        this.name = "Student";
+        this.id = "000";
+        this.group = "INT22045";
+        this.email = "uet@vnu.edu.vn";
     }
 
     public String getName() {
@@ -45,31 +45,34 @@ public class Student {
         this.group = group;
     }
 
-    public string getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(string email) {
+    public void setEmail(String email) {
         this.email = email;
     }
-    
+
     /**
      * Constructor 2
+     *
      * @param n
      * @param sid
      * @param em
      */
-    Student(String name, String id, String email) {
+    Student(String n, String sid, String em) {
         // TODO:
-        this.name=name;
-        this.id=id;
-        this.email=email;
-        this.group="INT22041";
-        
+        this.name = n;
+        this.id = sid;
+        this.group = "INT22045";
+        this.email = em;
     }
+
+   
 
     /**
      * Constructor 3
+     *
      * @param s
      */
     Student(Student s) {
@@ -79,18 +82,16 @@ public class Student {
         this.group=s.group;
         this.email=s.email;
     }
-    Student(string name,String id,String group,String email){
-        this.name=name;
-        this.id=id;
-        this.group=group;
-        this.email=email;
-    }
+
     String getInfo() {
         // TODO:
-        System.out.println(name);
-        System.out.println(id);
-        System.out.println(group);
-        System.out.println(email);
-       // return null; // xóa dòng này sau khi cài đặt
+        return  this.name+" "+this.id+" "+this.group+" "+this.email;
+    }
+    public static void main( String arg[]) {
+        Student Student = new Student("manh","00","nguyenducmanh2581912");
+        System.out.println(Student .getInfo());
     }
 }
+
+
+
