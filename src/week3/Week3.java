@@ -25,11 +25,20 @@ public class Week3 {
      */
     public static String calculateBMI(double weight, double height) {
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
-        double BMI;
-        BMI=weight/(height*height);
-        if(BMI<18.5) return "Thiếu cân";
-        else if(BMI>=18.5&&BMI<22.99) return "Bình Thường";
-        else if(BMI>=23&&BMI<24.99) return "Thừa cân";
-        else return "Béo phì";
+       if(weight <= 0 || height <= 0) return null;
+    	
+    	double BMI;
+    	BMI = weight/(height*height);
+    	String ketqua = new String(); 
+    	
+    	if(BMI < 18.5) ketqua = "thieu can";
+    	else if(18.5 <= BMI && BMI < 23) ketqua = "binh thuong";
+    	else if(23 <= BMI && BMI < 25) ketqua = "thua can";
+    	else ketqua = "beo phi";
+
+    		
+    	System.out.println(ketqua);
+    	
+    	return ketqua;
     }
 }
