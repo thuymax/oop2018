@@ -1,38 +1,56 @@
 package week3;
-import org.junit.Test;
+
+//import com.sun.org.apache.xpath.internal.operations.Equals;
 import static org.junit.Assert.*;
+import week3.Week3;
+import org.junit.Test;
 public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
-     public void testMax(){
-        assertEquals(4,Week3.max(4,2));
-        assertEquals(1,Week3.max(1,-4));
-        assertEquals(10,Week3.max(10,4));
-        assertEquals(9,Week3.max(9,2));
-        assertEquals(3,Week3.max(3,2));
-    }
-
+    @Test
+      public  void testMax(){
+          Week3 tm = new Week3();
+          
+         // int a = tm.max(10, 5);
+//          int b = tm.max(12, 15);
+//          int c = tm.max(15, 13);
+//          int d = tm.max(16, 13);
+//          int e = tm.max(15, 12);
+          assertEquals(10, tm.max(10, 5));
+          assertEquals(15, tm.max(12, 15));
+          assertEquals(15, tm.max(15, 13));
+          assertEquals(16,  tm.max(16, 13));
+          assertEquals(15, tm.max(15, 12));
+      }
     // TODO: Viết 5 testcase cho phương thức minOfArray()
-    public void testMinOfArray(){
-        int a[]={1,4,2,3,6,8,2};
-        int b[]={0,-2,-6,1,7,10};
-        int c[]={100,200,12,-1};
-        int d[]={1,7,3,5,1};
-        int e[]={4,0,5,7,8,2};
-        assertEquals(1,Week3.minOfArray(a));
-        assertEquals(-6,Week3.minOfArray(b));
-        assertEquals(-1,Week3.minOfArray(c));
-        assertEquals(1,Week3.minOfArray(d));
-        assertEquals(0,Week3.minOfArray(e));
-
-    }
-
+      @Test
+      public void testMinOfArray(){
+          Week3 tm = new Week3();
+          int a[] = {1, 2, 3, 4, 5};
+          int b[] = {1, 0, 4, 6, 7, 8, 9};
+          int c[] = {4, 5, 6, 2, 8, 9};
+          int d[] = {17, 18, 12, 3, 7, 13};
+          int e[] = {34, 35, 13, 45, 23, 45};
+//          int x = tm.minOfArray(a);
+//          int y = tm.minOfArray(b);
+//          int z = tm.minOfArray(c);
+//          int t = tm.minOfArray(d);
+//          int v = tm.minOfArray(e);
+          assertEquals(1, tm.minOfArray(a));
+          assertEquals(0, tm.minOfArray(b));
+          assertEquals(2, tm.minOfArray(c));
+          assertEquals(3, tm.minOfArray(d));
+         assertEquals(13, tm.minOfArray(e));
+      }
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
+      @Test
     public void testCalculateBMI(){
-        assertEquals("Bình Thường",Week3.calculateBMI(50, 1.60));
-        assertEquals("Béo Phì",Week3.calculateBMI(60, 1.00));
-        assertEquals("Bình Thường",Week3.calculateBMI(45, 1.52));
-        assertEquals("Thiếu Cân",Week3.calculateBMI(40, 1.60));
-        assertEquals("Thừa Cân",Week3.calculateBMI(70, 1.70));
+          Week3 tm = new Week3();
+          assertEquals("Thua can", tm.calculateBMI(72, 1.70));
+          assertEquals("Binh thuong", tm.calculateBMI(62, 1.67));
+          assertEquals("Beo phi", tm.calculateBMI(83, 1.50));
+          assertEquals("Thieu can", tm.calculateBMI(45, 1.70));
+          assertEquals("Binh thuong", tm.calculateBMI(65, 1.75));
     }
+
 }
