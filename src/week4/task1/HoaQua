@@ -1,0 +1,65 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week4;
+
+/**
+ *
+ * @author CCNE
+ */
+public class HoaQua {
+     public String Gia;
+    public String Nguongoc;
+    public String Ngaynhap;
+    public int Soluong;
+    public HoaQua(){
+        this.Gia="150k/kg";
+        this.Nguongoc="CHina";
+        this.Ngaynhap="10/10/2010";
+        this.Soluong= 250;
+    }
+    public HoaQua(String Gia,String Nguongoc,String Ngaynhap,int Soluong){
+        this.Gia=Gia;
+        this.Nguongoc=Nguongoc;
+        this.Ngaynhap=Ngaynhap;
+        this.Soluong=Soluong;
+    }
+    public void print(){
+        System.out.println("Gia/kg: " + Gia +"\nNguon goc: "+Nguongoc+"\nNgay: "+Ngaynhap+"\nSo luong: "+ Soluong);
+        System.out.println("\n-----------------------");
+    }
+    public String getGia() {
+        return Gia;
+    }
+
+    public void setGia(String Gia) {
+        this.Gia = Gia;
+    }
+
+    public String getNguongoc() {
+        return Nguongoc;
+    }
+
+    public void setNguongoc(String Nguongoc) {
+        this.Nguongoc = Nguongoc;
+    }
+
+    public String getNgaynhap() {
+        return Ngaynhap;
+    }
+
+    public void setNgaynhap(String Ngaynhap) {
+        this.Ngaynhap = Ngaynhap;
+    }
+
+    public int getSoluong() {
+        return Soluong;
+    }
+
+    public void setSoluong(int Soluong) {
+        this.Soluong = Soluong;
+    }
+
+}
